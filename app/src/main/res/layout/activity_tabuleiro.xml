@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TabuleiroActivity">
+
+    <Button
+        android:id="@+id/btnDescer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="101dp" />
+
+    <Button
+        android:id="@+id/btnDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="right"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <Button
+        android:id="@+id/btnRodar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/btnRodar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPontuacaoAtual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/satisfy"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/lblPontuacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lblPontuacao"
+        app:layout_constraintTop_toTopOf="@+id/lblPontuacao"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <Button
+            android:id="@+id/btnPausa"
+            android:layout_width="68sp"
+            android:layout_height="68sp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="@string/btnPausar" />
+
+        <GridLayout
+            android:id="@+id/gridTabuleiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblPontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/satisfy"
+        android:text="@string/lblPontuacao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/btnEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="left"
+        app:layout_constraintEnd_toStartOf="@+id/btnDireita"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="576dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

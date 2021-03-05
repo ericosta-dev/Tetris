@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tetris">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".jogo.Jogo"
+            android:label="@string/title_activity_jogo"
+            android:theme="@style/Theme.Tetris.NoActionBar"></activity>
+        <activity android:name=".view.TabuleiroActivity" />
+        <activity android:name=".view.ConfigActivity" />
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

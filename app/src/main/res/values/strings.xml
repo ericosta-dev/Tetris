@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Tetris</string>
+    <string name="btnNovoJogo">New Game</string>
+    <string name="btnContinuar">Resume</string>
+    <string name="btnConfigurar">Settings</string>
+    <string name="btnFacil">Easy</string>
+    <string name="btnNormal">Normal</string>
+    <string name="btnDificil">Hard</string>
+    <string name="lblDificuldade">Dificulty</string>
+    <string name="btnVoltar">Back</string>
+    <string name="title_activity_jogo">Jogo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="lblPontuacao">Score</string>
+    <string name="btnPausar">Pause</string>
+    <string name="btnRodar">Rotate</string>
 </resources>

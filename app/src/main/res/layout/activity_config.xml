@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5286EF"
+        tools:context=".view.ConfigActivity">
+
+        <RadioGroup
+            android:id="@+id/RadioGroupDificuldade"
+            android:layout_width="259dp"
+            android:layout_height="144dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioButtonFacil"
+                style="@android:style/Widget.Holo.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@android:drawable/btn_radio"
+                android:checked="false"
+                android:fontFamily="@font/satisfy"
+                android:text="@string/btnFacil"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNormal"
+                style="@android:style/Widget.Holo.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@android:drawable/btn_radio"
+                android:checked="false"
+                android:fontFamily="@font/satisfy"
+                android:text="@string/btnNormal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDificil"
+                style="@android:style/Widget.Holo.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@android:drawable/btn_radio"
+                android:checked="false"
+                android:fontFamily="@font/satisfy"
+                android:text="@string/btnDificil"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satisfy"
+            android:text="@string/lblDificuldade"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/RadioGroupDificuldade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.854" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satisfy"
+            android:text="@string/btnVoltar"
+            android:textColor="#8C9EFF"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RadioGroupDificuldade"
+            app:layout_constraintVertical_bias="0.481" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tetris</string>
+    <string name="btnNovoJogo">Novo Jogo</string>
+    <string name="btnContinuar">Continuar</string>
+    <string name="btnConfigurar">Configurações</string>
+    <string name="btnFacil">Fácil</string>
+    <string name="btnNormal">Normal</string>
+    <string name="btnDificil">Difícil</string>
+    <string name="lblDificuldade">Dificuldade</string>
+    <string name="btnVoltar">Voltar</string>
+    <string name="lblPontuacao">Pontuação</string>
+    <string name="btnPausar">Pausar</string>
+    <string name="btnRodar">Rodar</string>
+</resources>
